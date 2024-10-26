@@ -39,6 +39,7 @@ def get_github_profile(username):
                     "stars": repo.get("stargazers_count"),
                     "forks": repo.get("forks_count"),
                     "updated_at": repo.get("updated_at"),
+                    "url": repo.get("html_url")
                 }
                 for repo in repos_data
             ]
@@ -54,7 +55,9 @@ def index():
 @app.route('/profile', methods=['GET'])
 def profile():
     username = request.args.get('username')
+    print(username)
     user_info = get_github_profile(username)
+    print(f"\n\n{user_info}\n")
     if user_info:
         return render_template('profile.html', user=user_info)
     else:
