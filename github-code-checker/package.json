@@ -1,0 +1,20 @@
+{
+  "name": "github-code-checker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@octokit/auth-app": "^7.1.4",
+    "@octokit/rest": "^21.1.0",
+    "@octokit/webhooks": "^13.4.2",
+    "body-parser": "^1.20.3",
+    "child_process": "^1.0.2",
+    "express": "^4.21.2"
+  }
+}
