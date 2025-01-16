@@ -236,6 +236,14 @@ app.post("/webhook", verifyWebhook, async (req, res) => {
   res.status(200).send("Webhook processed");
 });
 
+
+app.get("/", (req, res) => {
+  // greetings.
+  welcomeMesg = "<h2> You are welcome! </h2>"
+  return welcomeMesg
+})
+
+
 // Start server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
