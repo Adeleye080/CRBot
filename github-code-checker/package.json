@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "echo 'No build step required'"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +23,8 @@
     "eslint-define-config": "^2.1.0",
     "express": "^4.21.2",
     "fs": "^0.0.1-security",
-    "jsonwebtoken": "^9.0.2"
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "pm2": "^5.4.3"
   }
 }
