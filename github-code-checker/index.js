@@ -239,7 +239,7 @@ app.post("/webhook", verifyWebhook, async (req, res) => {
 
 app.get("/", (req, res) => {
   // greetings.
-  welcomeMesg = "<h2> You are welcome! </h2>"
+  const welcomeMesg = "<h2> You are welcome! </h2>"
   return welcomeMesg
 })
 
