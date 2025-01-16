@@ -8,6 +8,7 @@ import { exec } from "child_process";
 import fs from "fs";
 import path from "path";
 import os from "os";
+import helmet from "helmet";
 
 // GitHub App Details
 dotenv.config(); // Initialize dotenv
@@ -19,6 +20,7 @@ const port = process.env.PORT || 3000;
 // Express setup
 const app = express();
 app.use(bodyParser.json());
+app.use(helmet())
 
 // GitHub JWT for authentication
 function generateJWT() {
