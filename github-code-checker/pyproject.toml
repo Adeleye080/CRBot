@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "Code Review Bot"
+version = "0.1.0"
+description = "Reviews code for vulnerabilities, policy checks, etc."
+authors = ["Ajiboye Adeleye Pius <ajiboyeadeleye080@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Flask = "^3.1.0"
+python-dotenv = "^1.0.1"
+gunicorn = "^23.0.0"
+six = "^1.17.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
